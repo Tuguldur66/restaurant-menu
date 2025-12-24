@@ -1,13 +1,8 @@
-const breakfast = document.getElementById("breakfast");
-const lunch = document.getElementById("lunch");
-const shake = document.getElementById("shake");
-const dinner = document.getElementById("dinner");
 const buttons = document.querySelectorAll(".filters button");
 const items = document.querySelectorAll(".menu-item");
 
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
-    // active class солих
     buttons.forEach((b) => b.classList.remove("active"));
     btn.classList.add("active");
 
